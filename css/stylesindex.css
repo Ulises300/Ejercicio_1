@@ -1,12 +1,57 @@
+*{
+    font-family: monospace;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
 header{
-    background-color: antiquewhite;
+    background-color: rgb(241, 204, 159);
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 #wrapper{
-    background-color: aqua;
+    height: 80vh;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+#wrapper h1{
+    text-align: center;
+    align-items: center;
+}
+
+#trabajos{
+    background-color: antiquewhite;
+    display: flex;
+    height: 100%;
+}
+
+
+.link{
+    margin: 2%;
+    text-decoration: none;
+    color: black;
+    height: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    display: flex;
+    padding: 4%;
+    border: dotted 2px;
+    border-radius: 4px;
 }
 
 footer{
-    background-color: beige;
-    
+    height: 10vh;
+    background-color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
