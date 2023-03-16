@@ -61,7 +61,7 @@
 
 .h400{height: 400px;}
 /* color ----------------------------------------*/
-.colorprimario{background-color: #090d1a;}
+.colorprimario{background-color: #4426a0;}
 .violeta{background-color: blueviolet;}
 .azuleta{background-color: #422a8a;}
 .blanco-tx{color: white;}
@@ -98,9 +98,10 @@
 }
 
 
-.argentina{
+.argentina {
     background-image: url('https://static.treslineas.com.ar/foto/nota-1698149-argentina-campeon-mundial-qatar-2022-1046383.jpg');
     position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: screen;
 }
