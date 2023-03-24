@@ -35,24 +35,29 @@ header{
 
 #trabajos{
     background-color: antiquewhite;
-    /* display: flex; */
+    display: flex;
     height: 100%;
 }
 
+.imagen {
+	width: 35vw;
+	height: vh;
+}
 
-.link{
-    margin: 2%;
-    text-decoration: none;
-    color: black;
-    height: 15%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: antiquewhite;
-    display: flex;
-    padding: 4%;
-    border: dotted 2px;
-    border-radius: 4px;
+.link {
+	margin: 2%;
+	text-decoration: none;
+	color: black;
+	height: 15%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(241, 204, 159);
+	/* display: flex; */
+	padding: 1%;
+	/* border: dotted 2px; */
+	border-radius: 10px;
+	width: min-content;
 }
 
 footer{
@@ -62,4 +67,28 @@ footer{
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.enlace{
+    padding-top: 10px;
+}
+
+.btn{
+    margin-top: 3%;
+    padding: 6px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    /* border:solid 1px; */
+    color: black;
+    text-decoration: none;
+    width:100px;
+}
+
+
+.nombre{
+    margin: 10px;
+}
+
+.descripcion{
+    margin: 5px;
 }
