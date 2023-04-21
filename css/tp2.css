@@ -179,7 +179,7 @@ no al texto que se escriba adentro */
 
 .resto{
     display: flex;
-    background-color: bisque;
+    /* background-color: bisque; */
     height: 200px;
     width: 100%;
 }
@@ -188,16 +188,23 @@ no al texto que se escriba adentro */
     height: 100%;
     width: 40%;
     background-color: white;
+    /* background-image: url(../img/resto2); */
 }
 
 .resto .datosresto{
     height: 100%;
     width: 60%;
     background-color: white;
-    background-image: url(../img/Restaurant_Näsinneula.jpg);
+    /* background-image: url(../img/Restaurant_Näsinneula.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.resto img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 /* .valoracion{

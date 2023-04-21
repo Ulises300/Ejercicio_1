@@ -123,7 +123,6 @@ no al texto que se escriba adentro */
 .busqueda input[type="search"]::placeholder{
     color: gray;
 }
-
 .busqueda input[type="submit"]{
     height: 60px;
     width: 60px;
@@ -137,13 +136,13 @@ no al texto que se escriba adentro */
     font-size: 22pt!important;
 }
 
-.categorias{
+.categorias .inforesto{
     height: 110px;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     align-items: center;  
 }
-.categorias ul{
+.categorias ul, .inforesto ul{
     height: 100%;
     width: 100%;
     display: flex;
@@ -153,7 +152,15 @@ no al texto que se escriba adentro */
     gap: 10px;
     overflow-x: scroll;
 }
-.categorias ul li{
+.inforesto ul{
+    overflow-x: hidden;
+}
+
+.inforesto{
+    flex-direction: column;
+}
+
+.categorias ul li , .inforesto ul li{
     height: 80px;
     text-align: center;
     display: flex;
@@ -239,4 +246,35 @@ no al texto que se escriba adentro */
     /* flex-direction: column; */
     gap: 20px;
     flex-wrap: wrap;
+}
+
+
+.nombre{
+    width: 90%;
+    height: 80px;
+    padding-top: 20px;
+    line-height: 40px;
+    margin: auto;
+}
+
+.info{
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: aquamarine;
+    width: 100%;
+    padding: 10px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
 }
