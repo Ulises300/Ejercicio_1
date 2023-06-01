@@ -138,6 +138,7 @@ body {
 	font-size: 13pt;
 	padding: 15px;
 	background-color: #f0f0fa;
+	width:100%;
 }
 /*Para poner color al texto adentro del la caja de busqueda pero 
 no al texto que se escriba adentro */
