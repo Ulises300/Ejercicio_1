@@ -4,8 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*CONTENEDOR SCROLLBAR*/
@@ -65,19 +64,21 @@
 }
 
 .portada {
-    height: 350px;
+    height: 50vh;
     background-color: whitesmoke;
     color: aliceblue;
     position: relative;
     padding: 7%;
     font-size: 18px;
-    /* imagen */
-    background-image: url(../img/restaurante.png);
+    background-image: url(../img/pollo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* para oscurecer la imagen de fondo */
-    box-shadow: inset 0 0 250px black;
+    box-shadow: 0px 15px 25px 2px rgba(33,33,33,0.3);
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif
 }
 
 .bienvenida {
@@ -125,7 +126,6 @@ no al texto que se escriba adentro */
 .busqueda input[type="search"]::placeholder{
     color: gray;
 }
-
 .busqueda input[type="submit"]{
     height: 60px;
     width: 60px;
@@ -139,13 +139,13 @@ no al texto que se escriba adentro */
     font-size: 22pt!important;
 }
 
-.categorias{
+.categorias .inforesto{
     height: 110px;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     align-items: center;  
 }
-.categorias ul{
+.categorias ul, .inforesto ul{
     height: 100%;
     width: 100%;
     display: flex;
@@ -155,7 +155,15 @@ no al texto que se escriba adentro */
     gap: 10px;
     overflow-x: scroll;
 }
-.categorias ul li{
+.inforesto ul{
+    overflow-x: hidden;
+}
+
+.inforesto{
+    flex-direction: column;
+}
+
+.categorias ul li , .inforesto ul li{
     height: 80px;
     text-align: center;
     display: flex;
@@ -219,15 +227,32 @@ no al texto que se escriba adentro */
 
 }
 
-
-.rate2{
+.euro {
     position: absolute;
     color: white;
     text-align: center;
     line-height: 50px;
-    font-size:18pt;
-    right: -10px;
-    top: -10px;
+    font-size: 18pt;
+    right: 10px;
+    bottom: -73px;
+    background-color: aquamarine;
+    height: 65px;
+    width: 120px;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    text-shadow: 0 0 Bblack;
+    box-sizing: 1px 1px 1px black;
+    box-shadow: 9px 7px 35px rgba(31,31,31,0.5);
+}
+
+.rate2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18pt;
+    right: 40px;
+    bottom: -20px;
     background-color: aquamarine;
     height: 60px;
     width: 60px;
@@ -241,4 +266,186 @@ no al texto que se escriba adentro */
     /* flex-direction: column; */
     gap: 20px;
     flex-wrap: wrap;
+}
+
+
+.nombre{
+    width: 90%;
+    height: 80px;
+    padding-top: 20px;
+    line-height: 40px;
+    margin: auto;
+}
+
+.info {
+    width: 90%;
+    /* margin-bottom: 100px; */
+    padding-top: 20px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    border-top-color: grey 1px;
+    text-transform: uppercase;
+    border: solid 1px grey;
+    background-color: white;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+footer ul li{
+    width: 100%;
+    text-align: center;
+}
+
+footer ul li:hover{
+    border-top: solid 4px aqua;
+    color: blue;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: grey;
+}
+
+footer a:hover{
+    color: black;
+}
+
+
+footer .active{
+    /* border-top: solid 4px aqua; */
+    color: black;
+    font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------- */
+.gap20{gap: 20px;}
+.dflex{display: flex;}
+.centrar_h{justify-content: center;}
+.centrar_v{align-items: center;}
+.posrel{position: relative;}
+.posab{position: absolute;}
+.fdcol{flex-direction: column;}
+/* ---------------------------------------------------------------------- */
+
+
+header button{
+    left: 20px;
+    border: 0;
+    background-color: white;
+    /* cursor: pointer; */
+}
+
+
+.ptext {padding: 10px;}
+
+.item_carta{
+    background-color: white;
+    height: 140px;
+    width: 100%;
+    gap: 15px;
+    border-radius:15px ;
+}
+.img_plato{
+    height: 120px;
+    width: 120px;
+    /* background-color: aquamarine; */
+    border-radius: 50%;
+}
+
+
+.circulo{
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.precio{
+    right: -10px;
+    bottom: 10px;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.img_plato img {object-fit: cover;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.txt_plato{gap: 20px;}
+
+.sombra{box-shadow: 0 0 5px -2px rgba(0,0,0.342);
+/*  box-shadow: ejex ejey blur distanciaS_E color */}
+
+.mgbot{margin-bottom: 50px;}
+
+
+.form {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cantidad {
+    display: flex;
+    background-color: #11e39d;
+    width: 20vw;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    height: 50px;
+    /* margin-top: 20px; */
+    justify-content: center;
+    align-content: space-between;
+}
+
+.carrito {
+    display: flex;
+    background-color: #11e39d;
+    width: 70vw;
+    padding: 25px;
+    text-align: center;
+    margin-left: 3px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.numero {
+    padding: 20px;
+}
+
+.t{
+    display:flex;
+    justify-content: center;
+}
+.texto.roboto {
+    text-align: center;
+    border-bottom: solid 0.1px gray;
+    width: 90vw;
+}
+.texto{
+    color: gray;
 }

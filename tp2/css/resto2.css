@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
 
 /*CONTENEDOR SCROLLBAR*/
@@ -228,14 +230,29 @@ no al texto que se escriba adentro */
 
 }
 
+.euro {
+    position: absolute;
+    color: aquamarine;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18pt;
+    right: 10px;
+    bottom: -140px;
+    /* background-color: aquamarine; */
+    height: 120px;
+    width: 120px;
+    border-start-start-radius: 15px;
+    border-end-end-radius: 15px;
+    text-shadow: 0 0 Bblack;
+}
 
-.rate2{
+.rate2 {
     position: absolute;
     color: white;
     text-align: center;
     line-height: 50px;
-    font-size:18pt;
-    right: 60px;
+    font-size: 18pt;
+    right: 40px;
     bottom: -20px;
     background-color: aquamarine;
     height: 60px;
@@ -261,19 +278,24 @@ no al texto que se escriba adentro */
     margin: auto;
 }
 
-.info{
+.info {
     width: 90%;
+    /* margin-bottom: 100px; */
     padding-top: 20px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 
-footer{
+footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 10px;
+    border-top-color: grey 1px;
     text-transform: uppercase;
+    border: solid 1px grey;
+    background-color: white;
 }
 
 footer ul{
